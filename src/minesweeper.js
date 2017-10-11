@@ -1,8 +1,25 @@
-var pasta = "Spaghetti"; // ES5 syntax
+/*const blankLine = '  |   |  '
+const guessLine = '1 |   |  '
+const bombLine = '  | B |  '
+console.log(guessLine);
+console.log(bombLine);
+console.log(blankLine);*/
 
-const meat = "Pancetta"; // ES6 syntax
+const board = [
+  [' ', ' ', ' '],
+  [' ', ' ', ' '],
+  [' ', ' ', ' ']
+];
 
-let sauce = "Eggs and cheese"; // ES6 syntax
+const printBoard = board => {
+  console.log('Current Board: ');
+  console.log(board[0].join(' | '));
+  console.log(board[1].join(' | '));
+  console.log(board[2].join(' | '));
+};
 
-// Template literals, like the one below, were introduced in ES6
-const carbonara = `You can make carbonara with ${pasta}, ${meat}, and a sauce made with ${sauce}.`;
+//console.log(board);
+printBoard(board);
+board[0][1] = '1';
+board[2][2] = 'B';
+printBoard(board);
