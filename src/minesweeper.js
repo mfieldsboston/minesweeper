@@ -1,3 +1,4 @@
+// begin 3rd evolution
 const generatePlayerBoard = (numberOfRows, numberOfColumns) => {
   const board = [];
   //console.log('First Rows: ' + numberOfRows + ' First Columns: ' + numberOfColumns);
@@ -17,14 +18,17 @@ console.log(generatePlayerBoard(4, 8));
 console.log(generatePlayerBoard(2, 4));
 console.log(generatePlayerBoard(2, 6));
 console.log(generatePlayerBoard(3, 6));
+// end 3rd evolution
+
 
 /* begin 2nd evolution
-
 /*const board = [
   [' ', ' ', ' '],
   [' ', ' ', ' '],
   [' ', ' ', ' ']
 ];
+
+console.log(board);
 
 const printBoard = board => {
   console.log('Current Board: ');
@@ -33,11 +37,27 @@ const printBoard = board => {
   console.log(board[2].join(' | '));
 };
 
-
 printBoard(board);
 board[0][1] = '1';
 
 printBoard(board);
 board[2][2] = 'B';
-
 end 2nd evolution */
+
+
+/* begin 1st evolution
+const blankLine = '  |   |  ';
+
+console.log('This is what an empty board would look like:');
+console.log(blankLine);
+console.log(blankLine);
+console.log(blankLine);
+
+const guessLine = '1 |   |  ';
+const bombLine = '  | B |  ';
+
+console.log('This is what a board with a guess and a bomb on it would look like:');
+console.log(guessLine);
+console.log(bombLine);
+console.log(blankLine);
+end 1st evolution */
