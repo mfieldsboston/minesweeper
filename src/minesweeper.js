@@ -1,11 +1,26 @@
-/*const blankLine = '  |   |  '
-const guessLine = '1 |   |  '
-const bombLine = '  | B |  '
-console.log(guessLine);
-console.log(bombLine);
-console.log(blankLine);*/
+const generatePlayerBoard = (numberOfRows, numberOfColumns) => {
+  const board = [];
+  //console.log('First Rows: ' + numberOfRows + ' First Columns: ' + numberOfColumns);
+  for (let i = 0; i < numberOfRows; i++) {
+      const row = [];
+      //console.log('Second Rows: ' + numberOfRows + ' Second Columns: ' + numberOfColumns + ' i: ' + i);
+    for (let j = 0; j < numberOfColumns; j++) {
+      //console.log('Third Rows: ' + numberOfRows  + ' Third Columns: ' + numberOfColumns + ' i: ' + i  + ' j: ' + j);
+      row.push(' ');
+    }
+    board.push(row);
+  }
+  return board;
+};
 
-const board = [
+console.log(generatePlayerBoard(4, 8));
+console.log(generatePlayerBoard(2, 4));
+console.log(generatePlayerBoard(2, 6));
+console.log(generatePlayerBoard(3, 6));
+
+/* begin 2nd evolution
+
+/*const board = [
   [' ', ' ', ' '],
   [' ', ' ', ' '],
   [' ', ' ', ' ']
@@ -18,8 +33,11 @@ const printBoard = board => {
   console.log(board[2].join(' | '));
 };
 
-//console.log(board);
+
 printBoard(board);
 board[0][1] = '1';
-board[2][2] = 'B';
+
 printBoard(board);
+board[2][2] = 'B';
+
+end 2nd evolution */
