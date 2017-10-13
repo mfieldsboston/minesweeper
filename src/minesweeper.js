@@ -48,6 +48,9 @@ const printBoard = board => {
         row.join(' | ').join('\n');
   //});*/
 };
+
+let playerBoard = generatePlayerBoard(3, 4);
+
 // end 3rd evolution
 
 
