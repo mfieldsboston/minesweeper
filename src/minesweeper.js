@@ -41,6 +41,10 @@ const generateBombBoard = (numberOfRows, numberOfColumns, numberOfBombs) => {
 
     return board;
 };
+
+const printBoard = board => {
+
+};
 // end 3rd evolution
 
 
