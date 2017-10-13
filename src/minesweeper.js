@@ -49,13 +49,13 @@ const printBoard = board => {
   //});*/
 };
 
-let playerBoard = generatePlayerBoard(3, 4);
+/*let playerBoard = generatePlayerBoard(3, 4);
 let playerBoard = generateBombBoard(3, 4, 5);
 
 console.log('Player Board: ');
 printBoard(playerBoard);
 console.log('Bomb Board: ');
-printBoard(bombBoard);
+printBoard(bombBoard);*/
 
 // end 3rd evolution
 
