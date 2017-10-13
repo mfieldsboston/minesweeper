@@ -15,8 +15,36 @@ const generatePlayerBoard = (numberOfRows, numberOfColumns) => {
   return board;
 };
 
-console.log(generatePlayerBoard(2, 3));
 // end 3rd evolution
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 // begin 2nd evolution
