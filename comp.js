@@ -50,7 +50,6 @@ const printBoard = board => {
 };
 // end 3rd evolution
 
-
 /*
 // begin 2nd evolution
 const board = [
