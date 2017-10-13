@@ -15,10 +15,7 @@ const generatePlayerBoard = (numberOfRows, numberOfColumns) => {
   return board;
 };
 
-console.log(generatePlayerBoard(4, 8));
-console.log(generatePlayerBoard(2, 4));
-console.log(generatePlayerBoard(2, 6));
-console.log(generatePlayerBoard(3, 6));
+console.log(generatePlayerBoard(2, 3));
 // end 3rd evolution
 
 /*
