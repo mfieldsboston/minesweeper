@@ -10,12 +10,9 @@ class Game {
                 console.log('The game is over!');
                 this._board.print();
             }
-        /*else if (this._board.playerBoard[rowIndex][columnIndex] !== ' ') {
+        else if (this._board.playerBoard[rowIndex][columnIndex] !== ' ') {
             this._board.hasSafeTiles();
             console.log('You won!');
-        }*/
-        else if (!this._board.hasSafeTiles()) {
-              console.log('You won');
         }
         else {
             console.log('Current Board:');
@@ -86,11 +83,8 @@ class Board {
     hasSafeTiles(){
         return this._numberOfTiles !== this._numberOfBombs;
     }
-    /*print(board){
+    print(board){
         console.log(this._board.map(row => row.join(' | ')).join('\n'));
-    }*/
-    print(){
-        console.log(this._playerBoard.map(row => row.join(' | ')).join('\n'));
     }
     static generatePlayerBoard(numberOfRows, numberOfColumns) {
         const board = [];
@@ -139,8 +133,7 @@ class Board {
 
 
 const g = new Game(3, 3, 3);
-//g..playMove(0, 0);
-g.playerMove(0, 0);
+g..playMove(0, 0);
 
 
 
