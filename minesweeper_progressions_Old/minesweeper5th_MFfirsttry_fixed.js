@@ -4,7 +4,7 @@ class Game {
     constructor(numberOfRows, numberOfColumns, numberOfBombs) {
         this._board = new Board(numberOfRows, numberOfColumns, numberOfBombs);
     }
-    playMove(rowIndex, columnIndex) {
+    playerMove(rowIndex, columnIndex) {
         this._board.flipTile(rowIndex, columnIndex);
         if (this._board.playerBoard[rowIndex][columnIndex] === 'B') {
                 console.log('The game is over!');
@@ -140,7 +140,7 @@ class Board {
 
 const g = new Game(3, 3, 3);
 //g..playMove(0, 0);
-g.playMove(0, 0);
+g.playerMove(0, 0);
 
 
 
